@@ -98,8 +98,8 @@ const images = () => {
     .pipe(dest('dist/images'))
 }
 
-watch('src/**/*.html', htmlMinify)
 watch('src/pug/**/*.pug)', puggy)
+watch('src/**/*.html', htmlMinify)
 watch('src/styles/*.scss', scss)
 watch('src/styles/*.css', styles)
 watch('src/js/*.js', scripts)
