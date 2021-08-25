@@ -7,13 +7,14 @@
 
 @font-face {
   font-family: "Raleway";
-  font-weight: normal;
-  src: url("../fonts/ttfirsneueregular-webfont.woff2") format("woff2"), url("../fonts/ttfirsneueregular-webfont.woff") format("woff");
+  font-weight: 400;
+  src: url("fonts/Raleway-Regular.woff2") format("woff2"), url("fonts/Raleway-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Raleway";
-  font-weight: bold;
-  src: url("../fonts/ttfirsneuebold-webfont.woff2") format("woff2"), url("../fonts/ttfirsneuebold-webfont.woff") format("woff");
+  src: url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 a {
   text-decoration: none;
@@ -24,5 +25,80 @@ li {
 }
 
 body {
+  background-color: #FFFFFF;
   font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*header*/
+.header {
+  border-bottom: 1px solid #E0E4E7;
+}
+
+.header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 24px 48px;
+}
+
+.header--logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header--logo-svg {
+  width: 40px;
+  height: 32px;
+}
+
+.header--logo-p {
+  color: #0D5ADC;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 21px;
+}
+
+.header--entrance-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header--entrance-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.header--entrance-p {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #3B4157;
 }

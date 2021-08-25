@@ -25,7 +25,8 @@ const puggy = () => {
         doctype: 'html',
         pretty: false
      }))
-     .pipe(dest('dist'));
+     .pipe(dest('dist'))
+     .pipe(browserSync.stream())
     }
 
 const styles = () => {
@@ -98,7 +99,7 @@ const images = () => {
     .pipe(dest('dist/images'))
 }
 
-watch('src/pug/**/*.pug)', puggy)
+watch('src/pug/*.pug)', puggy)
 watch('src/**/*.html', htmlMinify)
 watch('src/styles/*.scss', scss)
 watch('src/styles/*.css', styles)

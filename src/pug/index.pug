@@ -1,14 +1,15 @@
 html(lang="ru")
   head
     meta(charset="utf-8")
-    title= "Учимся работать с шаблонизатором Pug"
+    title= "Поступай правильно"
+    link(rel='stylesheet', href='./main.css', type='text/css')
   body
       header.header 
-       div.container 
-        div
-          svg 
-          p ПОСТУПАЙ ПРАВИЛЬНО
-        a(href="#")
-          p Войти
-          svg 
+       div.container.header--container 
+        div.header--logo-wrapper
+          svg.header--logo-svg
+          p.header--logo-p ПОСТУПАЙ ПРАВИЛЬНО
+        a(href="#").header--entrance-a
+          p.header--entrance-p Войти
+          svg.header--entrance-svg 
 
