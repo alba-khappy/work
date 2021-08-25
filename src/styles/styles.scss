@@ -5,18 +5,50 @@
 }
 
 @font-face {
-    font-family: "Raleway";
-    font-weight: normal;
-    src: url("../fonts/ttfirsneueregular-webfont.woff2") format("woff2"),
-        url("../fonts/ttfirsneueregular-webfont.woff") format("woff");
+    font-family: 'Raleway';
+    font-weight: 400;
+    src: url("fonts/Raleway-Regular.woff2") format("woff2"),
+        url("fonts/Raleway-Regular.woff") format("woff");
 }
 
-@font-face {
-    font-family: "Raleway";
-    font-weight: bold;
-    src: url("../fonts/ttfirsneuebold-webfont.woff2") format("woff2"),
-        url("../fonts/ttfirsneuebold-webfont.woff") format("woff");
+@font-face{
+
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.woff') format('woff'),
+    url('../fonts/Raleway-Regular.ttf') format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+    
+    }
+    
+
+// @font-face {
+//     font-family: "Raleway";
+//     font-weight: 700;
+//     src: url("./fonts/Raleway-Bold.woff2") format("woff2"),
+//         url("./fonts/Raleway-Bold.woff") format("woff");
+// }
+
+// @font-face {
+//     font-family: "Raleway";
+//     font-weight: 900;
+//     src: url("./fonts/Raleway-Black.woff2") format("woff2"),
+//         url("./fonts/Raleway-Black.woff") format("woff");
+// }
+
+$blueColorText: #0D5ADC;
+$blackColorText: #3B4157;
+$whiteColor: #FFFFFF;
+$grayColor1: #3B4157;
+$grayColor1: #9EAEC6;
+$grayColor1: #CDCFD2;
+
+@mixin displayFlexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
 }
+
 
 a {
     text-decoration: none;
@@ -27,5 +59,60 @@ li {
 }
 
 body {
+    background-color: $whiteColor;
     font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+    border-bottom: 1px solid #E0E4E7;
+}
+
+.header--container {
+    @include displayFlexSpaceBetween;
+    align-items: center;
+    padding: 24px 48px;
+}
+
+.header--logo-wrapper {
+    @include displayFlexSpaceBetween;
+    align-items: center;
+}
+
+.header--logo-svg {
+    width: 40px;
+    height: 32px;
+}
+
+.header--logo-p {
+    color: $blueColorText;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    line-height: 21px;
+}
+
+.header--entrance-a {
+    @include displayFlexSpaceBetween;
+    align-items: center;
+}
+
+.header--entrance-svg {
+    width: 32px;
+    height: 32px;
+}
+
+.header--entrance-p {
+    font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $blackColorText;
 }
