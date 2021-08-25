@@ -64,6 +64,10 @@ const scss = () => {
     .pipe(browserSync.stream())
 }
 
+const fonts = () => {
+    return src('src/fonts/**/*')
+      .pipe(dest('dist/fonts'))
+}
 
 const scripts = () => {
     return src('src/js/*.js')
@@ -99,13 +103,13 @@ const images = () => {
     .pipe(dest('dist/images'))
 }
 
-watch('src/pug/*.pug)', puggy)
-watch('src/**/*.html', htmlMinify)
-watch('src/styles/*.scss', scss)
-watch('src/styles/*.css', styles)
-watch('src/js/*.js', scripts)
+watch('src/pug/**/*.pug', puggy);
+watch('src/**/*.html', htmlMinify);
+watch('src/styles/*.scss', scss);
+watch('src/styles/*.css', styles);
+watch('src/js/*.js', scripts);
 
 
-exports.clean = clean
-exports.htmlMinify = htmlMinify
-exports.default = series(clean, puggy, images, styles, scss, scripts, htmlMinify, watchFiles)
+exports.clean = clean;
+exports.htmlMinify = htmlMinify;
+exports.default = series(clean, puggy, images, styles, scss, scripts, htmlMinify, watchFiles);
