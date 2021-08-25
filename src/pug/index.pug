@@ -8,7 +8,7 @@ html(lang="ru")
        div.container.header--container 
         div.header--logo-wrapper
           svg.header--logo-svg
-          p.header--logo-p ПОСТУПАЙ ПРАВИЛЬНО
+          p.header--logo-p.logo-p ПОСТУПАЙ ПРАВИЛЬНО
         a(href="#").header--entrance-a
           p.header--entrance-p Войти
           svg.header--entrance-svg
@@ -16,24 +16,160 @@ html(lang="ru")
         section.search
          div.container.search--container
           div.swiper-container.mySwiper1
-           .swiper-slide ghghg
-           .swiper-slide ggg
-           .swiper-slide
+           .swiper-slide.swiper-slide-1
+            h1.search--h1 Выбирай лучшее - 
+             span.search--h1-highlight поступай правильно
+            a(href="#").search--a Начать поиск
+           .swiper-slide.swiper-slide-2
+           .swiper-slide.swiper-slide-3
            .swiper-pagination 
 
 
 
 
         section.about
-         div.container.about--container  
+         div.container.about--container
+          ul.about__list
+           li.about__list-item
+             a(href="").about__a
+               svg.about__img
+               p.about__p Государственные вузы
+
+           li.about__list-item
+             a(href="").about__a 
+              svg.about__img
+              p.about__p Направления подготовки
+            
+           li.about__list-item
+             a(href="").about__a 
+              svg.about__img
+              p.about__p Правила поступления 
+         
+           
         section.admission
-         div.container.admission--container  
+         div.container.admission--container
+          h2.h2 Как поступить в вуз 
+          div.admission--grid
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-1
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 1
+              p.admission__grid-p <span class="admission__grid-p--blue">Выберите</span> специальность
+
+
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-2
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 2
+              p.admission__grid-p <span class="admission__grid-p--blue">Выберите</span> вуз
+
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-3
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 3
+              p.admission__grid-p <span class="admission__grid-p--blue">Сдайте</span> ЕГЭ*
+
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-4
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 4
+              p.admission__grid-p <span class="admission__grid-p--blue">Подайте</span> заявление о приеме в вуз
+
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-5
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 5
+              p.admission__grid-p <span class="admission__grid-p--blue">Сдайте</span> вступительные испытания
+
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-6
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 6
+              p.admission__grid-p <span class="admission__grid-p--blue">Подайте</span> заявление о согласии на зачисление в вуз
+
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-7
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 7
+              p.admission__grid-p <span class="admission__grid-p--blue">Принесите</span> оригиналы документа об образовании
+
+           div.admission__grid-item
+            div.admission__grid-img.admission__grid-img-8
+            div.admission__p-wrapper
+              p.admission__grid-p--blue 8
+              p.admission__grid-p <span class="admission__grid-p--blue">Пройдите</span> медицинское обследование*
+          
+          p.admission--p-additional-option *При необходимости
+          
+
+
         section.news
-         div.container.news--container  
+         div.container.news--container
+          div.news__heading
+           h2.h2 Новости
+           a(href="#") Все новости
+          ul.news__list 
+            li.news__list-item
+             a(href="").news__a
+              img(src="../images/news1.jpg", alt="новость1")
+              div.news__description
+               div.news__wrapper--description
+                h3.news__description--h3 Проект расписания ГИА-11
+                p.news__description--p Тут будет подзаголовокТут будет подзаголовокТут будет подзаголовок
+               div.news__date 06.02.2021
+
+            li.news__list-item
+             a(href="").news__a
+              img(src="../images/news2.jpg", alt="новость1")
+              div.news__description
+               div.news__wrapper--description
+                h3.news__description--h3 Проведение основного государственного экзамена (ОГЭ) по предметам по выбору в 2021 г.
+                p.news__description--p Тут будет подзаголовокТут будет подзаголовокТут будет подзаголовок
+               div.news__date 29.01.2021
+
+            li.news__list-item
+             a(href="").news__a
+              img(src="../images/news3.jpg", alt="новость1")
+              div.news__description
+               div.news__wrapper--description
+                h3.news__description--h3 Итоговое сочинение
+                p.news__description--p Тут будет подзаголовокТут будет подзаголовокТут будет подзаголовок
+               div.news__date 29.01.2021
+
+
         section.services
-         div.container.services--container  
+         div.container.services--container
+          h2.h2 Вам может быть интересно 
+          ul.services__list 
+            li 
+              a(href="").services__a.services__a-1 
+              p Онлайн-сервис самопроверки 
+
+            li 
+              a(href="").services__a.services__a-2 
+              p Проверка результатов ЕГЭ
+
+            li 
+              a(href="").services__a.services__a-3 
+              p Официальный информационный портал ЕГЭ   
+
     
       footer.footer
+        div.container.footer--container
+
+         div
+           div.footer--logo-wrapper
+            svg.header--logo-svg
+            p.footer--logo-p.logo-p ПОСТУПАЙ ПРАВИЛЬНО
+           
+         div.footer__error
+           p Нашли ошибку? 
+           p Сообщите нам на почту 
+           a(href="") supportpp@digitalobr.ru 
+           
+         div.footer__quote
+           <blockquote>© При цитировании информации с сайта ссылка на первоисточник обязательна</blockquote>
+        
 
       script(src='./app.js')
       //- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

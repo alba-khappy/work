@@ -112,4 +112,4 @@ watch('src/js/*.js', scripts);
 
 exports.clean = clean;
 exports.htmlMinify = htmlMinify;
-exports.default = series(clean, puggy, images, styles, scss, scripts, htmlMinify, watchFiles);
+exports.default = series(clean, puggy, images, styles, scss, fonts, scripts, htmlMinify, watchFiles);
