@@ -2,9 +2,8 @@ html(lang="ru")
   head
     meta(charset="utf-8")
     title= "Поступай правильно"
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     link(rel='stylesheet', href='./main.css', type='text/css')
+    script(src='./app.js')
   body
       header.header 
        div.container.header--container 
@@ -18,15 +17,20 @@ html(lang="ru")
         section.search
          div.container.search--container
           div.swiper-container.mySwiper1
-           .swiper-slide.swiper-slide-1
+           div.swiper-slide.swiper-slide-1
             h1.search--h1 Выбирай лучшее - 
-             span.search--h1-highlight поступай правильно
+             div.search--h1-highlight 
+                p &nbsp;поступай правильно
             a(href="#").search--a Начать поиск
-          //-  .swiper-slide.swiper-slide-2
-          //-  .swiper-slide.swiper-slide-3
+           div.swiper-slide.swiper-slide-2
+            h1.search--h1 Твой билет 
+             span.search--h1-highlight в будущее
+            a(href="#").search--a Начать поиск
+           div.swiper-slide.swiper-slide-3
+            h1.search--h1 Открывай новые 
+             span.search--h1-highlight возможности
+            a(href="#").search--a Начать поиск
            .swiper-pagination 
-
-
 
 
         section.about
@@ -171,9 +175,7 @@ html(lang="ru")
            
          div.footer__quote © При цитировании информации с сайта ссылка на первоисточник обязательна
      
-      script(src="https://unpkg.com/swiper/swiper-bundle.js")
-      script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
-      script(src='./app.js')
+
     
     
 

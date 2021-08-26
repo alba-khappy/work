@@ -147,6 +147,9 @@ body {
     background-image: url("../images/highlight1.svg");
     background-repeat: no-repeat;
     color: $whiteColor;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .search--a {
