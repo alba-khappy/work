@@ -14,15 +14,13 @@
 @font-face {
     font-family: "Raleway";
     font-weight: 700;
-    src: url("./fonts/Raleway-Bold.woff2") format("woff2"),
-        url("./fonts/Raleway-Bold.woff") format("woff");
+    src: url("./fonts/Raleway-Bold.woff2") format("woff2"), url("./fonts/Raleway-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Raleway";
     font-weight: 900;
-    src: url("./fonts/Raleway-Black.woff2") format("woff2"),
-        url("./fonts/Raleway-Black.woff") format("woff");
+    src: url("./fonts/Raleway-Black.woff2") format("woff2"), url("./fonts/Raleway-Black.woff") format("woff");
 }
 
 $blueColorText: #0d5adc;
@@ -67,9 +65,9 @@ body {
     padding: 24px 48px;
 }
 
-.header--logo-wrapper {
-    @include displayFlexSpaceBetween;
-    align-items: center;
+.logo-wrapper {
+    display: grid;
+    grid-template-columns: 55px 245px;
 }
 
 .header--logo-svg {
@@ -78,6 +76,7 @@ body {
 }
 
 .logo-p {
+    align-self: center;
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 0.05em;
@@ -86,10 +85,12 @@ body {
 
 .header--logo-p {
     color: $blueColorText;
+    align-self: center;
 }
 
 .header--entrance-a {
-    @include displayFlexSpaceBetween;
+    display: grid;
+    grid-template-columns: 60px 32px;
     align-items: center;
 }
 
@@ -110,7 +111,7 @@ body {
 /*search*/
 
 .search--container {
-    padding: 80px 165px 100px;
+    padding: 0 165px;
 }
 
 .swiper-container {
@@ -119,7 +120,14 @@ body {
 }
 
 .mySwiper1 {
+    .swiper-slide {
+        display: grid;
+        grid-template-rows: 225px 70px;
+        align-items: end;
+    }
+
     .swiper-slide-1 {
+        height: 400px;
         background-image: url("../images/search-img1.png");
         background-repeat: no-repeat;
         background-position: center right;
@@ -146,6 +154,7 @@ body {
     background-color: $blueColorText;
     color: $whiteColor;
     padding: 20px 30px;
+    max-width: 232px;
     font-weight: 900;
     font-size: 18px;
     line-height: 21px;
@@ -169,13 +178,25 @@ body {
 }
 
 .about__a {
-    @include displayFlexSpaceBetween;
+    display: grid;
+    grid-template-columns: 60px 270px;
     align-items: center;
-    max-width: 350px;
-    max-height: 80px;
     box-shadow: 0px 16px 16px #dde6eb;
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
     color: $blueColorText;
+
+    &:hover {
+        background-color: $blueColorText;
+        color: $whiteColor;
+    }
+
+    &:hover > svg > path {
+        fill: $whiteColor;
+    }
+}
+
+.about__a > svg > path {
+    fill: $blueColorText;
 }
 
 .about__img {
@@ -183,10 +204,20 @@ body {
     height: 40px;
 }
 
+.about__p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}
+
 /*admission*/
 
+.admission {
+    background: url("../images/arrow-top.png") 100% 20% no-repeat, url("../images/arrow-bottom.png") 0 66% no-repeat;
+}
+
 .admission--container {
-    padding: 60px 165px;
+    padding: 60px 165px 35px;
 }
 
 .h2 {
@@ -197,10 +228,19 @@ body {
     color: #3b4157;
 }
 
+.admission--h2 {
+    margin-bottom: 40px;
+}
+
 .admission--grid {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 235px);
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 35px;
+}
+
+.admission__grid--border {
+    border: 2px solid $blueColorText;
 }
 
 .admission__grid-img {
@@ -210,6 +250,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 100px;
+    margin-bottom: 30px;
 }
 
 .admission__grid-img-1 {
@@ -238,7 +279,7 @@ body {
 }
 
 .admission__grid-p {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .admission__p-wrapper {
@@ -246,10 +287,21 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
+    padding-left: 10px;
 }
 
 .admission__grid-p--blue {
+    display: block;
     color: $blueColorText;
+    margin-right: 20px;
+}
+
+.admission--p-additional-option {
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 30px;
 }
 
 /*news*/
@@ -258,7 +310,17 @@ body {
     background-color: $lightBlue;
 }
 
-.news__list  {
+.news__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.news--h2 {
+    margin-right: 30px;
+}
+
+.news__list {
     @include displayFlexSpaceBetween;
     flex-wrap: wrap;
 }
@@ -276,6 +338,7 @@ body {
 }
 
 .news__description--p {
+    max-width: 210px;
     font-size: 14px;
     line-height: 18px;
 }
@@ -285,7 +348,7 @@ body {
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #CDCFD2;
+    color: #cdcfd2;
 }
 
 .news--container {
@@ -294,12 +357,12 @@ body {
 
 .news__description {
     width: 350px;
-    height: 190px;
+    height: 187px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: $whiteColor;
-    padding: 20px 24px;
+    padding: 15px 24px 25px;
 }
 
 /*services*/
@@ -308,13 +371,18 @@ body {
     padding: 75px 165px 90px;
 }
 
+.services--h2 {
+    margin-bottom: 35px;
+}
+
 .services__a {
     width: 350px;
     height: 154px;
     display: block;
     background-repeat: no-repeat;
     background-position: center center;
-    border: 1px solid #DDE6EB;
+    border: 1px solid #dde6eb;
+    margin-bottom: 20px;
 }
 
 .services__list {
@@ -323,15 +391,15 @@ body {
 }
 
 .services__a-1 {
-    background-image: url('../images/services1.png');
+    background-image: url("../images/services1.png");
 }
 
 .services__a-2 {
-    background-image: url('../images/services2.png');
+    background-image: url("../images/services2.png");
 }
 
 .services__a-3 {
-    background-image: url('../images/services3.png');
+    background-image: url("../images/services3.png");
 }
 
 /*footer*/
@@ -344,29 +412,39 @@ body {
 .footer--container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 80px;
     padding: 50px 165px 90px;
 }
 
 .footer__error {
     grid-row: 2/3;
+    align-self: end;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 
     a {
         color: $whiteColor;
     }
 }
 
-.footer--logo-wrapper {
-    display: flex;
-    align-items: center;
+.footer--error-p-info {
+    display: inline;
+}
+
+.footer--logo-wrapper > svg > path {
+    fill: $whiteColor;
 }
 
 .footer__quote {
     grid-row: 2/3;
     opacity: 0.5;
+    align-self: end;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .footer--logo-p {
     color: $whiteColor;
 }
-    

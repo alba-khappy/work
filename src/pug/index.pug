@@ -2,16 +2,18 @@ html(lang="ru")
   head
     meta(charset="utf-8")
     title= "Поступай правильно"
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     link(rel='stylesheet', href='./main.css', type='text/css')
   body
       header.header 
        div.container.header--container 
-        div.header--logo-wrapper
-          svg.header--logo-svg
+        a(href="").logo-wrapper
+          include ../images/logo.svg
           p.header--logo-p.logo-p ПОСТУПАЙ ПРАВИЛЬНО
         a(href="#").header--entrance-a
           p.header--entrance-p Войти
-          svg.header--entrance-svg
+          include header-icon.pug
       main
         section.search
          div.container.search--container
@@ -20,8 +22,8 @@ html(lang="ru")
             h1.search--h1 Выбирай лучшее - 
              span.search--h1-highlight поступай правильно
             a(href="#").search--a Начать поиск
-           .swiper-slide.swiper-slide-2
-           .swiper-slide.swiper-slide-3
+          //-  .swiper-slide.swiper-slide-2
+          //-  .swiper-slide.swiper-slide-3
            .swiper-pagination 
 
 
@@ -32,33 +34,33 @@ html(lang="ru")
           ul.about__list
            li.about__list-item
              a(href="").about__a
-               svg.about__img
+               include ../images/about1.svg
                p.about__p Государственные вузы
 
            li.about__list-item
              a(href="").about__a 
-              svg.about__img
+              include ../images/about2.svg
               p.about__p Направления подготовки
             
            li.about__list-item
              a(href="").about__a 
-              svg.about__img
+              include ../images/about3.svg
               p.about__p Правила поступления 
          
            
         section.admission
          div.container.admission--container
-          h2.h2 Как поступить в вуз 
+          h2.h2.admission--h2 Как поступить в вуз 
           div.admission--grid
            div.admission__grid-item
-            div.admission__grid-img.admission__grid-img-1
+            div.admission__grid-img.admission__grid-img-1.admission__grid--border
             div.admission__p-wrapper
               p.admission__grid-p--blue 1
               p.admission__grid-p <span class="admission__grid-p--blue">Выберите</span> специальность
 
 
            div.admission__grid-item
-            div.admission__grid-img.admission__grid-img-2
+            div.admission__grid-img.admission__grid-img-2.admission__grid--border
             div.admission__p-wrapper
               p.admission__grid-p--blue 2
               p.admission__grid-p <span class="admission__grid-p--blue">Выберите</span> вуз
@@ -70,7 +72,7 @@ html(lang="ru")
               p.admission__grid-p <span class="admission__grid-p--blue">Сдайте</span> ЕГЭ*
 
            div.admission__grid-item
-            div.admission__grid-img.admission__grid-img-4
+            div.admission__grid-img.admission__grid-img-4.admission__grid--border
             div.admission__p-wrapper
               p.admission__grid-p--blue 4
               p.admission__grid-p <span class="admission__grid-p--blue">Подайте</span> заявление о приеме в вуз
@@ -82,13 +84,13 @@ html(lang="ru")
               p.admission__grid-p <span class="admission__grid-p--blue">Сдайте</span> вступительные испытания
 
            div.admission__grid-item
-            div.admission__grid-img.admission__grid-img-6
+            div.admission__grid-img.admission__grid-img-6.admission__grid--border
             div.admission__p-wrapper
               p.admission__grid-p--blue 6
               p.admission__grid-p <span class="admission__grid-p--blue">Подайте</span> заявление о согласии на зачисление в вуз
 
            div.admission__grid-item
-            div.admission__grid-img.admission__grid-img-7
+            div.admission__grid-img.admission__grid-img-7.admission__grid--border
             div.admission__p-wrapper
               p.admission__grid-p--blue 7
               p.admission__grid-p <span class="admission__grid-p--blue">Принесите</span> оригиналы документа об образовании
@@ -106,7 +108,7 @@ html(lang="ru")
         section.news
          div.container.news--container
           div.news__heading
-           h2.h2 Новости
+           h2.h2.news--h2 Новости
            a(href="#") Все новости
           ul.news__list 
             li.news__list-item
@@ -139,7 +141,7 @@ html(lang="ru")
 
         section.services
          div.container.services--container
-          h2.h2 Вам может быть интересно 
+          h2.h2.services--h2 Вам может быть интересно 
           ul.services__list 
             li 
               a(href="").services__a.services__a-1 
@@ -158,20 +160,20 @@ html(lang="ru")
         div.container.footer--container
 
          div
-           div.footer--logo-wrapper
-            //- include ./images/logo.svg
+           div.logo-wrapper
+            include ../images/logo.svg
             p.footer--logo-p.logo-p ПОСТУПАЙ ПРАВИЛЬНО
            
          div.footer__error
            p Нашли ошибку? 
-           p Сообщите нам на почту 
+           p.footer--error-p-info Сообщите нам на почту 
            a(href="") supportpp@digitalobr.ru 
            
-         div.footer__quote
-           <blockquote>© При цитировании информации с сайта ссылка на первоисточник обязательна</blockquote>
-        
-
+         div.footer__quote © При цитировании информации с сайта ссылка на первоисточник обязательна
+     
+      script(src="https://unpkg.com/swiper/swiper-bundle.js")
+      script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
       script(src='./app.js')
-      //- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     
 
