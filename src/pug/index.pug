@@ -18,19 +18,23 @@ html(lang="ru")
          div.container.search--container
           div.swiper-container.mySwiper1
            div.swiper-slide.swiper-slide-1
-            h1.search--h1 Выбирай лучшее - 
-             div.search--h1-highlight 
+            h1.search--h1 &nbsp;Выбирай лучшее - 
+             div.search--h1-highlight.search--h1-highlight-1 
                 p &nbsp;поступай правильно
             a(href="#").search--a Начать поиск
-           div.swiper-slide.swiper-slide-2
-            h1.search--h1 Твой билет 
-             span.search--h1-highlight в будущее
-            a(href="#").search--a Начать поиск
-           div.swiper-slide.swiper-slide-3
-            h1.search--h1 Открывай новые 
-             span.search--h1-highlight возможности
-            a(href="#").search--a Начать поиск
-           .swiper-pagination 
+            img(src="../images/search-img1.png", alt="illustration").search__pic
+          //-  div.swiper-slide.swiper-slide-2
+          //-   h1.search--h1 
+          //-     div.search--h1-highlight.search--h1-highlight-2 &nbsp;Твой билет 
+          //-     div в будущее
+          //-   a(href="#").search--a Начать поиск
+          //-  div.swiper-slide.swiper-slide-3
+          //-   h1.search--h1 
+          //-     span Открывай 
+          //-     span.search--h1-highlight.search--h1-highlight-3 новые 
+          //-     span.search--h1-highlight.search--h1-highlight-4 &nbsp;возможности
+          //-   a(href="#").search--a Начать поиск
+          //-  .swiper-pagination 
 
 
         section.about
@@ -147,15 +151,15 @@ html(lang="ru")
          div.container.services--container
           h2.h2.services--h2 Вам может быть интересно 
           ul.services__list 
-            li 
+            li.services__list-item
               a(href="").services__a.services__a-1 
               p Онлайн-сервис самопроверки 
 
-            li 
+            li.services__list-item 
               a(href="").services__a.services__a-2 
               p Проверка результатов ЕГЭ
 
-            li 
+            li.services__list-item 
               a(href="").services__a.services__a-3 
               p Официальный информационный портал ЕГЭ   
 
@@ -164,7 +168,7 @@ html(lang="ru")
         div.container.footer--container
 
          div
-           div.logo-wrapper
+           div.logo-wrapper.footer--logo-wrapper
             include ../images/logo.svg
             p.footer--logo-p.logo-p ПОСТУПАЙ ПРАВИЛЬНО
            

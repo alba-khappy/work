@@ -1,0 +1,67 @@
+@import "general.scss";
+/*footer*/
+
+.footer {
+    background-color: $blueColorText;
+    color: $whiteColor;
+}
+
+.footer--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 80px;
+    padding: 50px 165px 90px;
+}
+
+.footer__error {
+    grid-row: 2/3;
+    align-self: end;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    a {
+        color: $whiteColor;
+    }
+}
+
+.footer--error-p-info {
+    display: inline;
+}
+
+.footer--logo-wrapper > svg > path {
+    fill: $whiteColor;
+}
+
+.footer__quote {
+    grid-row: 2/3;
+    opacity: 0.5;
+    align-self: end;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer--logo-p {
+    color: $whiteColor;
+}
+
+
+@media (min-width: 1441px) {
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1441px) and (min-width: 1024px) {
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+}
+
+
+@media (max-width: 375px) {
+}

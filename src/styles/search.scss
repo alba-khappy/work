@@ -1,0 +1,127 @@
+@import "general.scss";
+
+/*search*/
+
+.search--container {
+    padding: 0 165px 0 150px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper1 {
+    .swiper-slide {
+        display: grid;
+        grid-template-rows: 245px 155px;
+        grid-template-columns: 1fr 370px;
+        align-items: end;
+        position: relative;
+    }
+
+    // .swiper-slide-1 {
+    //     height: 400px;
+    //     background-image: url("../images/search-img1.png");
+    //     background-repeat: no-repeat;
+    //     background-position: center right;
+    // }
+}
+
+.search--h1 {
+    max-width: 575px;
+    font-size: 52px;
+    line-height: 58px;
+    letter-spacing: 0.02em;
+    color: $blackColorText;
+    margin-bottom: 30px;
+}
+
+.search--h1-highlight {
+    background-repeat: no-repeat;
+    color: $whiteColor;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.search--h1-highlight-1 {
+    background-image: url("../images/highlight1.svg");
+}
+
+.search--h1-highlight-2 {
+    background-image: url("../images/highlight2.svg");
+}
+
+.search--h1-highlight-3 {
+    background-image: url("../images/highlight3.svg");
+    display: inline;
+}
+
+.search--h1-highlight-4 {
+    background-image: url("../images/highlight4.svg");
+}
+
+.search--a {
+    grid-column: 1/2;
+    align-self: start;
+    display: inline-block;
+    background-color: $blueColorText;
+    color: $whiteColor;
+    padding: 20px 30px;
+    max-width: 232px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.search__pic {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: end;
+}
+
+
+@media (max-width: 1300px) {
+
+    .mySwiper1 .swiper-slide-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 245px 370px 155px;
+    }
+
+    .search--h1 {
+        justify-self: center;
+    }
+
+    .search__pic {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+    }
+
+    .search--a {
+        justify-self: center;
+    }
+
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+
+
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+
+    .mySwiper1.swiper-slide-1 {
+        height: 800px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+
+}

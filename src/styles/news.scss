@@ -1,0 +1,84 @@
+@import "general.scss";
+/*news*/
+
+.news {
+    background-color: $lightBlue;
+}
+
+.news__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.news--h2 {
+    margin-right: 30px;
+}
+
+.news__list {
+    @include displayFlexSpaceBetween;
+    flex-wrap: wrap;
+}
+
+.news__a {
+    display: inline-block;
+    box-shadow: 0px 16px 16px #dde6eb;
+}
+
+.news__description--h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.news__description--p {
+    max-width: 210px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.news__date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #cdcfd2;
+}
+
+.news--container {
+    padding: 60px 165px;
+}
+
+.news__description {
+    width: 350px;
+    height: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $whiteColor;
+    padding: 15px 24px 25px;
+}
+
+@media (max-width: 1399px) and (min-width: 1024px) {
+    .news__list {
+        justify-content: center;
+    }
+
+    .news__list-item {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+
+
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+
+}
+
+
+@media (max-width: 375px) {
+}

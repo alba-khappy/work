@@ -1,0 +1,67 @@
+@import "general.scss";
+/*services*/
+
+.services--container {
+    padding: 75px 165px 90px;
+}
+
+.services--h2 {
+    margin-bottom: 35px;
+}
+
+.services__a {
+    width: 350px;
+    height: 154px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #dde6eb;
+    margin-bottom: 20px;
+}
+
+.services__list {
+    @include displayFlexSpaceBetween;
+    flex-wrap: wrap;
+}
+
+.services__a-1 {
+    background-image: url("../images/services1.png");
+}
+
+.services__a-2 {
+    background-image: url("../images/services2.png");
+}
+
+.services__a-3 {
+    background-image: url("../images/services3.png");
+}
+
+@media (max-width: 1441px) {
+}
+
+@media (max-width: 1399px) and (min-width: 1024px) {
+    .services__list {
+        justify-content: center;
+    }
+
+    .services__list-item {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+
+
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+
+    .mySwiper1.swiper-slide-1 {
+        height: 800px;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+}
