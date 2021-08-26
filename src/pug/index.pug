@@ -2,7 +2,11 @@ html(lang="ru")
   head
     meta(charset="utf-8")
     title= "Поступай правильно"
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.css")
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
     link(rel='stylesheet', href='./main.css', type='text/css')
+    script(src="https://unpkg.com/swiper/swiper-bundle.js")
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
     script(src='./app.js')
   body
       header.header 
@@ -23,18 +27,20 @@ html(lang="ru")
                 p &nbsp;поступай правильно
             a(href="#").search--a Начать поиск
             img(src="../images/search-img1.png", alt="illustration").search__pic
-          //-  div.swiper-slide.swiper-slide-2
-          //-   h1.search--h1 
-          //-     div.search--h1-highlight.search--h1-highlight-2 &nbsp;Твой билет 
-          //-     div в будущее
-          //-   a(href="#").search--a Начать поиск
-          //-  div.swiper-slide.swiper-slide-3
-          //-   h1.search--h1 
-          //-     span Открывай 
-          //-     span.search--h1-highlight.search--h1-highlight-3 новые 
-          //-     span.search--h1-highlight.search--h1-highlight-4 &nbsp;возможности
-          //-   a(href="#").search--a Начать поиск
-          //-  .swiper-pagination 
+           div.swiper-slide.swiper-slide-2
+            h1.search--h1 
+              div.search--h1-highlight.search--h1-highlight-2 &nbsp;Твой билет 
+              div в будущее
+            a(href="#").search--a Начать поиск
+            img(src="../images/search-img2.png", alt="illustration").search__pic
+           div.swiper-slide.swiper-slide-3
+            h1.search--h1 
+              span Открывай 
+              span.search--h1-highlight.search--h1-highlight-3 новые 
+              span.search--h1-highlight.search--h1-highlight-4 &nbsp;возможности
+            a(href="#").search--a Начать поиск
+            img(src="../images/search-img3.png", alt="illustration").search__pic
+           .swiper-pagination 
 
 
         section.about
