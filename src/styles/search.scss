@@ -13,19 +13,18 @@
 
 .mySwiper1 {
     .swiper-slide {
-        display: grid;
-        grid-template-rows: 245px 155px;
-        grid-template-columns: 1fr 370px;
-        align-items: end;
-        position: relative;
+        width: 100%;
+        max-width: 1400px;
+        height: auto;
     }
+}
 
-    // .swiper-slide-1 {
-    //     height: 400px;
-    //     background-image: url("../images/search-img1.png");
-    //     background-repeat: no-repeat;
-    //     background-position: center right;
-    // }
+.swiper-slide--style {
+    display: grid;
+    grid-template-rows: 245px 155px;
+    grid-template-columns: 1fr 370px;
+    align-items: end;
+    position: relative;
 }
 
 .search--h1 {
@@ -84,10 +83,18 @@
     justify-self: end;
 }
 
+.swiper-pagination-1 {
+    bottom: 20px;
+    left: 50%;
+
+    .swiper-pagination-bullet {
+        background-color: $blueColorText;
+        margin: 4px;
+    }
+}
 
 @media (max-width: 1300px) {
-
-    .mySwiper1 .swiper-slide-1 {
+    .swiper-slide--style {
         grid-template-columns: 1fr;
         grid-template-rows: 245px 370px 155px;
     }
@@ -105,23 +112,59 @@
     .search--a {
         justify-self: center;
     }
-
 }
 
 @media (max-width: 1023px) and (min-width: 769px) {
 
-
+    .search--container {
+        padding: 60px 100px;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 376px) {
+    .search--container {
+        padding: 60px 40px 0 40px;
+    }
+
+    .swiper-slide--style {
+        grid-template-rows: 170px 370px 180px;
+    }
+    
+    .search--a {
+        align-self: center;
+    }
 
     .mySwiper1.swiper-slide-1 {
         height: 800px;
     }
+}
+
+@media (max-width: 767px) {
+    .search--h1 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+
+    .search__pic {
+        width: 70%;
+    }
 
 }
 
-
 @media (max-width: 375px) {
+    .search--container {
+        padding: 0;
+    }
+
+    .swiper-slide--style {
+        grid-template-rows: 170px 200px 120px;
+    }
+
+    .search__pic {
+        width: 75%;
+    }
+
 
 }

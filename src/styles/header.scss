@@ -55,7 +55,7 @@
     color: $blackColorText;
 }
 
-@media (max-width: 375px) and (min-width: 300px) {
+@media (max-width: 375px) {
 
     /*header*/
     .header--container {
@@ -65,5 +65,18 @@
     .header--logo-p, .header--entrance-p {
         font-size: 12px;
         line-height: 14px;
+    }
+
+    .logo-wrapper {
+        grid-template-columns: 45px 200px;
+    }
+
+    .logo-wrapper > svg {
+        width: 30px;
+    }
+
+    .header--entrance-a > svg {
+        width: 24px;
+        height: 24px;
     }
 }

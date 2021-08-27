@@ -67,8 +67,20 @@
 
 @media (max-width: 768px) and (min-width: 376px) {
 
+    .about--container {
+        padding: 60px 40px;
+    }
+
+    .about__a {
+        grid-template-columns: 74px 280px;
+        padding: 26px 0px 20px 70px;
+    }
 }
 
 
 @media (max-width: 375px) {
+
+    .about--container {
+        padding: 60px 10px;
+    }
 }

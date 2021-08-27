@@ -39,7 +39,7 @@
 @media (max-width: 1441px) {
 }
 
-@media (max-width: 1399px) and (min-width: 1024px) {
+@media (max-width: 1399px) and (min-width: 769px) {
     .services__list {
         justify-content: center;
     }
@@ -56,6 +56,10 @@
 
 @media (max-width: 768px) and (min-width: 376px) {
 
+    .services--container {
+        padding: 60px 40px;
+    }
+
     .mySwiper1.swiper-slide-1 {
         height: 800px;
     }
@@ -64,4 +68,8 @@
 
 
 @media (max-width: 375px) {
+
+    .services--container {
+        padding: 30px 15px;
+    }
 }

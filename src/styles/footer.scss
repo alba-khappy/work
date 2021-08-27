@@ -60,8 +60,25 @@
 }
 
 @media (max-width: 768px) and (min-width: 376px) {
+
+    .footer--container {
+        padding: 40px;
+    }
+
+    .footer__quote {
+        grid-row: 3/4;
+    }
 }
 
 
 @media (max-width: 375px) {
+
+    .footer--container {
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 30px 15px;
+    }
+
+    .footer__quote {
+        grid-row: 3/4;
+    }
 }
