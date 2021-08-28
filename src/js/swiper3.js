@@ -21,12 +21,12 @@ const swiper = new Swiper('.swiper-3', {
   },
 
   breakpoints: {
-      // 320: {
-      //   slidesPerView: 2,
-      // },
-      // 768: {
-      //     slidesPerView:3,
-      //   },
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+          slidesPerView:2,
+        },
   }
 
 });

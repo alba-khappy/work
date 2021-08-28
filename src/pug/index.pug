@@ -214,7 +214,7 @@ html(lang="ru")
                     div.news__description
                       div.news__wrapper--description
                         h3.news__description--h3 Проведение основного государственного экзамена (ОГЭ) по предметам по выбору в 2021 г.
-                        p.news__description--p Тут будет подзаголовокТут будет подзаголовокТут будет подзаголовок
+                        p.news__description--p Тут будет подзаголовок
                       div.news__date 29.01.2021
 
 
@@ -235,18 +235,32 @@ html(lang="ru")
         section.services
          div.container.services--container
           h2.h2.services--h2 Вам может быть интересно 
-          ul.services__list 
-            li.services__list-item
-              a(href="").services__a.services__a-1 
-              p Онлайн-сервис самопроверки 
+          div.swiper.swiper-4
+            div.swiper-wrapper.services__list#servicesList 
+              .swiper-slide.services__list-item
+                a(href="").services__a.services__a-1 
+                p Онлайн-сервис самопроверки  
 
-            li.services__list-item 
-              a(href="").services__a.services__a-2 
-              p Проверка результатов ЕГЭ
+              .swiper-slide.services__list-item
+                a(href="").services__a.services__a-2 
+                p Проверка результатов ЕГЭ 
 
-            li.services__list-item 
-              a(href="").services__a.services__a-3 
-              p Официальный информационный портал ЕГЭ   
+              .swiper-slide.services__list-item
+                a(href="").services__a.services__a-3 
+                p Официальный информационный портал ЕГЭ  
+                
+          //- ul.services__list 
+          //-   li.services__list-item
+          //-     a(href="").services__a.services__a-1 
+          //-     p Онлайн-сервис самопроверки 
+
+          //-   li.services__list-item 
+          //-     a(href="").services__a.services__a-2 
+          //-     p Проверка результатов ЕГЭ
+
+          //-   li.services__list-item 
+          //-     a(href="").services__a.services__a-3 
+          //-     p Официальный информационный портал ЕГЭ   
     
       footer.footer
         div.container.footer--container

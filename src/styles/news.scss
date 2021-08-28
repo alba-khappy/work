@@ -82,7 +82,7 @@
     }
 
     .news__list-item {
-        margin: 10px;
+        margin: 25px;
     }
 }
 
@@ -118,6 +118,11 @@
     .news--container {
         padding: 60px 40px;
     }
+
+    .news__a {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 
@@ -125,5 +130,10 @@
 
     .news--container {
         padding: 60px 15px;
+    }
+
+    .news__a {
+        display: block;
+        margin: 0 auto 30px;
     }
 }
