@@ -52,3 +52,21 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 2px solid #85aff5;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 3px solid transparent;
+}
+
+.swiper-pagination-bullet:focus {
+    outline: none;
+}
+
+.swiper-pagination-bullet:hover {
+    background-color:  #85aff5;
+}
