@@ -53,6 +53,10 @@ body {
     margin: 0 auto;
 }
 
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+}
+
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     border: 2px solid #85aff5;
 }
@@ -68,5 +72,11 @@ body {
 }
 
 .swiper-pagination-bullet:hover {
-    background-color:  #85aff5;
+    background-color: $blueColorText;
 }
+
+.swiper-pagination-bullet {
+    background-color: #c4c4c4;
+    margin: 4px;
+}
+

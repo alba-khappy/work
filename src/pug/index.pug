@@ -181,9 +181,7 @@ html(lang="ru")
                   div.admission__p-wrapper
                     p.admission__grid-p--blue 8
                     p.admission__grid-p <span class="admission__grid-p--blue">Пройдите</span> медицинское обследование*
-          
-            div.swiper-pagination
-
+          .swiper-pagination.swiper-pagination-2
           p.admission--p-additional-option *При необходимости
 
 
@@ -226,10 +224,7 @@ html(lang="ru")
                         h3.news__description--h3 Итоговое сочинение
                         p.news__description--p Тут будет подзаголовокТут будет подзаголовокТут будет подзаголовок
                       div.news__date 29.01.2021
-
-            .swiper-pagination.swiper-pagination-3 
-            //- .swiper-button-next.swiper-button-next-3
-            //- .swiper-button-prev.swiper-button-prev-3
+          .swiper-pagination.swiper-pagination-3 
 
 
         section.services
@@ -237,17 +232,22 @@ html(lang="ru")
           h2.h2.services--h2 Вам может быть интересно 
           div.swiper.swiper-4
             div.swiper-wrapper.services__list#servicesList 
+            
               .swiper-slide.services__list-item
                 a(href="").services__a.services__a-1 
-                p Онлайн-сервис самопроверки  
+                p.services__p Онлайн-сервис самопроверки  
 
               .swiper-slide.services__list-item
                 a(href="").services__a.services__a-2 
-                p Проверка результатов ЕГЭ 
+                p.services__p Проверка результатов ЕГЭ 
 
               .swiper-slide.services__list-item
                 a(href="").services__a.services__a-3 
-                p Официальный информационный портал ЕГЭ  
+                p.services__p Официальный информационный портал ЕГЭ 
+
+            div.swiper-button-next.swiper-button-next-4
+            div.swiper-button-prev.swiper-button-prev-4 
+          div.swiper-pagination.swiper-pagination-4 
                  
     
       footer.footer

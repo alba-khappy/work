@@ -4,6 +4,7 @@
     direction: 'horizontal',
     slidesPerView: 3,
     slidesPerColumn: 1,
+    slidesPerGroup: 2,
 
     // // If we need pagination
     pagination: {
@@ -18,6 +19,7 @@
         },
         768: {
             slidesPerView:3,
+            slidesPerGroup: 3,
           },
     }
 

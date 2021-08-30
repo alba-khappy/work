@@ -97,6 +97,10 @@
     display: none;
 }
 
+.swiper-pagination.swiper-pagination-2 {
+    display: none;
+}
+
 @media (min-width: 1441px) {
     .admission {
         background: url(../images/arrow-top.png) center 20% no-repeat,
@@ -126,11 +130,35 @@
         grid-template-rows: 235px;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .swiper-pagination.swiper-pagination-2 {
+        display: block;
+        left: 40%;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 376px) {
     .admission--container {
-        padding: 60px 40px;
+        position: relative;
+        padding: 40px 40px 30px;
+    }
+
+    .admission--h2 {
+        margin-bottom: 60px;
+    }
+
+    .admission__grid-img {
+        margin-bottom: 20px;
+    }
+
+    .swiper-2 {
+        margin-bottom: 65px;
+    }
+
+    .admission--p-additional-option {
+        position: absolute;
+        right: 40px;
+        bottom: 45px;
     }
 }
 
@@ -146,5 +174,14 @@
 
     .admission--container {
         padding: 30px 10px;
+    }
+
+    .admission--h2 {
+            font-size: 24px;
+            line-height: 28px;
+    }
+
+    .admission--p-additional-option {
+        font-size: 16px; 
     }
 }

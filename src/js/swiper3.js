@@ -1,4 +1,4 @@
-if (window.matchMedia("(max-width: 1024px)").matches) {
+if (window.matchMedia("(max-width: 768px)").matches) {
 
 const list = document.querySelector('#newsList').classList.remove('news__list');
 
@@ -16,8 +16,8 @@ const swiper = new Swiper('.swiper-3', {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-3",
+    prevEl: ".swiper-button-prev-3",
   },
 
   breakpoints: {

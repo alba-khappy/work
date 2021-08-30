@@ -16,8 +16,8 @@ if (window.matchMedia("(max-width: 1024px)").matches) {
       },
     
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-4",
+        prevEl: ".swiper-button-prev-4",
       },
     
       breakpoints: {
@@ -27,6 +27,10 @@ if (window.matchMedia("(max-width: 1024px)").matches) {
           768: {
               slidesPerView:2,
             },
+          1023: {
+              slidesPerView:2,
+            },
+      
       }
     
     });

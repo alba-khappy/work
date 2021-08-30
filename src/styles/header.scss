@@ -9,7 +9,7 @@
 .header--container {
     @include displayFlexSpaceBetween;
     align-items: center;
-    padding: 24px 48px;
+    padding: 24px 40px;
 }
 
 .logo-wrapper {
@@ -59,7 +59,7 @@
 
     /*header*/
     .header--container {
-        padding: 27px 16px;
+        padding: 25px 15px;
     }
 
     .header--logo-p, .header--entrance-p {
@@ -79,4 +79,5 @@
         width: 24px;
         height: 24px;
     }
+
 }
