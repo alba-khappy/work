@@ -84,8 +84,8 @@
 }
 
 .swiper-pagination-1 {
+    width: 100%;
     bottom: 0;
-    left: 46%;
 }
 
 @media (max-width: 1300px) {
@@ -180,7 +180,7 @@
     }
 
     .swiper-pagination-1 {
-        left: 43%;
+        width: 100%;
     }
 
 }

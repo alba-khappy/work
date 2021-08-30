@@ -64,6 +64,10 @@
         display: block;
     }
 
+    .swiper-button-next-4, .swiper-button-prev-4 {
+        top: 43%;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -85,7 +89,7 @@
 
 @media (max-width: 768px) {
 
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next-4, .swiper-button-prev-4 {
         top: 40%;
     }
 
