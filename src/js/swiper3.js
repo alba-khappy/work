@@ -1,4 +1,4 @@
-if (window.matchMedia("(max-width: 768px)").matches) {
+if (window.matchMedia("(max-width: 1024px)").matches) {
 
 const list = document.querySelector('#newsList').classList.remove('news__list');
 

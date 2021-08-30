@@ -223,10 +223,6 @@ body {
 }
 
 /*admission*/
-.admission {
-  background: url("../images/arrow-top.png") 100% 20% no-repeat, url("../images/arrow-bottom.png") 0 66% no-repeat;
-}
-
 .admission--container {
   padding: 60px 165px 35px;
 }
@@ -332,20 +328,55 @@ body {
   display: none;
 }
 
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .admission {
+    background: url("../images/arrow-top.png") 100% 20% no-repeat, url("../images/arrow-bottom.png") 0 66% no-repeat;
+  }
+}
 @media (min-width: 1441px) {
   .admission {
     background: url(../images/arrow-top.png) center 20% no-repeat, url(../images/arrow-bottom.png) center 66% no-repeat;
   }
 }
+@media (max-width: 1023px) and (min-width: 768px) {
+  .admission--container {
+    position: relative;
+    padding: 40px 40px 30px;
+  }
+
+  .admission__grid-item-1 {
+    background: url("../images/arrow-768-1.svg") right 45% no-repeat;
+  }
+
+  .admission__grid-item-2 {
+    background: url("../images/arrow-768-2.svg") center 67% no-repeat;
+  }
+
+  .admission__grid-item-3 {
+    background: url("../images/arrow-768-3.svg") 11% 10% no-repeat;
+  }
+
+  .admission__grid-item-4 {
+    background: url("../images/arrow-768-4.svg") center 39% no-repeat;
+  }
+
+  .admission__grid-item-5 {
+    background: url("../images/arrow-768-5.svg") center no-repeat;
+  }
+
+  .admission__grid-item-6 {
+    background: url("../images/arrow-768-6.svg") right 33% no-repeat;
+  }
+
+  .admission__grid-item-7 {
+    background: url("../images/arrow-768-7.svg") center 19% no-repeat;
+  }
+
+  .admission__grid-item-8 {
+    background: url("../images/arrow-768-8.svg") left 35% no-repeat;
+  }
+}
 @media (max-width: 1023px) {
-  .admission {
-    background: url("../images/arrow-768.png") center no-repeat;
-  }
-
-  .admission--grid {
-    display: none;
-  }
-
   .admission--grid {
     display: none;
   }
@@ -389,11 +420,13 @@ body {
     bottom: 45px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .admission {
     background: url(../images/arrow-375.png) 20% 35% no-repeat;
+    background-size: contain;
   }
-
+}
+@media (max-width: 375px) {
   .admission__p-wrapper {
     font-size: 16px;
     line-height: 19px;
@@ -947,26 +980,20 @@ body {
 }
 @media (max-width: 1024px) {
   .news--container {
-    padding: 60px 150px;
+    padding: 60px 40px 90px;
   }
 
   .news__a, .news__a img, .news__description {
     width: 210px;
-  }
-}
-@media (max-width: 768px) and (min-width: 376px) {
-  .news--container {
-    padding: 60px 40px 90px;
   }
 
   .news__a {
     display: block;
     margin: 0 auto;
   }
-}
-@media (max-width: 768px) {
+
   .swiper-3 {
-    width: 90%;
+    width: 100%;
   }
 
   .swiper-pagination-3, .swiper-button-next-3, .swiper-button-prev-3 {
@@ -980,6 +1007,11 @@ body {
 
   .swiper-button-next.swiper-button-next-3, .swiper-button-prev.swiper-button-prev-3 {
     top: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-3 {
+    width: 90%;
   }
 }
 @media (max-width: 375px) {
@@ -1392,6 +1424,10 @@ body {
   }
 }
 @media (max-width: 1024px) {
+  .services--container {
+    padding: 60px 40px;
+  }
+
   .swiper-pagination-4 {
     left: 45%;
   }
@@ -1420,10 +1456,6 @@ body {
   }
 }
 @media (max-width: 768px) and (min-width: 376px) {
-  .services--container {
-    padding: 60px 40px;
-  }
-
   .mySwiper1.swiper-slide-1 {
     height: 800px;
   }
@@ -2152,10 +2184,6 @@ body {
 }
 
 /*admission*/
-.admission {
-  background: url("../images/arrow-top.png") 100% 20% no-repeat, url("../images/arrow-bottom.png") 0 66% no-repeat;
-}
-
 .admission--container {
   padding: 60px 165px 35px;
 }
@@ -2261,20 +2289,55 @@ body {
   display: none;
 }
 
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .admission {
+    background: url("../images/arrow-top.png") 100% 20% no-repeat, url("../images/arrow-bottom.png") 0 66% no-repeat;
+  }
+}
 @media (min-width: 1441px) {
   .admission {
     background: url(../images/arrow-top.png) center 20% no-repeat, url(../images/arrow-bottom.png) center 66% no-repeat;
   }
 }
+@media (max-width: 1023px) and (min-width: 768px) {
+  .admission--container {
+    position: relative;
+    padding: 40px 40px 30px;
+  }
+
+  .admission__grid-item-1 {
+    background: url("../images/arrow-768-1.svg") right 45% no-repeat;
+  }
+
+  .admission__grid-item-2 {
+    background: url("../images/arrow-768-2.svg") center 67% no-repeat;
+  }
+
+  .admission__grid-item-3 {
+    background: url("../images/arrow-768-3.svg") 11% 10% no-repeat;
+  }
+
+  .admission__grid-item-4 {
+    background: url("../images/arrow-768-4.svg") center 39% no-repeat;
+  }
+
+  .admission__grid-item-5 {
+    background: url("../images/arrow-768-5.svg") center no-repeat;
+  }
+
+  .admission__grid-item-6 {
+    background: url("../images/arrow-768-6.svg") right 33% no-repeat;
+  }
+
+  .admission__grid-item-7 {
+    background: url("../images/arrow-768-7.svg") center 19% no-repeat;
+  }
+
+  .admission__grid-item-8 {
+    background: url("../images/arrow-768-8.svg") left 35% no-repeat;
+  }
+}
 @media (max-width: 1023px) {
-  .admission {
-    background: url("../images/arrow-768.png") center no-repeat;
-  }
-
-  .admission--grid {
-    display: none;
-  }
-
   .admission--grid {
     display: none;
   }
@@ -2318,11 +2381,13 @@ body {
     bottom: 45px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .admission {
     background: url(../images/arrow-375.png) 20% 35% no-repeat;
+    background-size: contain;
   }
-
+}
+@media (max-width: 375px) {
   .admission__p-wrapper {
     font-size: 16px;
     line-height: 19px;
@@ -2519,26 +2584,20 @@ body {
 }
 @media (max-width: 1024px) {
   .news--container {
-    padding: 60px 150px;
+    padding: 60px 40px 90px;
   }
 
   .news__a, .news__a img, .news__description {
     width: 210px;
-  }
-}
-@media (max-width: 768px) and (min-width: 376px) {
-  .news--container {
-    padding: 60px 40px 90px;
   }
 
   .news__a {
     display: block;
     margin: 0 auto;
   }
-}
-@media (max-width: 768px) {
+
   .swiper-3 {
-    width: 90%;
+    width: 100%;
   }
 
   .swiper-pagination-3, .swiper-button-next-3, .swiper-button-prev-3 {
@@ -2552,6 +2611,11 @@ body {
 
   .swiper-button-next.swiper-button-next-3, .swiper-button-prev.swiper-button-prev-3 {
     top: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-3 {
+    width: 90%;
   }
 }
 @media (max-width: 375px) {
@@ -2714,6 +2778,10 @@ body {
   }
 }
 @media (max-width: 1024px) {
+  .services--container {
+    padding: 60px 40px;
+  }
+
   .swiper-pagination-4 {
     left: 45%;
   }
@@ -2742,10 +2810,6 @@ body {
   }
 }
 @media (max-width: 768px) and (min-width: 376px) {
-  .services--container {
-    padding: 60px 40px;
-  }
-
   .mySwiper1.swiper-slide-1 {
     height: 800px;
   }

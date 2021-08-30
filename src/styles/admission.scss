@@ -1,9 +1,6 @@
 @import "general.scss";
-/*admission*/
 
-.admission {
-    background: url("../images/arrow-top.png") 100% 20% no-repeat, url("../images/arrow-bottom.png") 0 66% no-repeat;
-}
+/*admission*/
 
 .admission--container {
     padding: 60px 165px 35px;
@@ -101,6 +98,12 @@
     display: none;
 }
 
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .admission {
+        background: url("../images/arrow-top.png") 100% 20% no-repeat, url("../images/arrow-bottom.png") 0 66% no-repeat;
+    }
+}
+
 @media (min-width: 1441px) {
     .admission {
         background: url(../images/arrow-top.png) center 20% no-repeat,
@@ -108,15 +111,47 @@
     }
 }
 
+@media (max-width: 1023px) and (min-width: 768px) {
+
+    .admission--container {
+        position: relative;
+        padding: 40px 40px 30px;
+    }
+
+    .admission__grid-item-1 {
+        background: url("../images/arrow-768-1.svg") right 45% no-repeat;
+    }
+
+    .admission__grid-item-2 {
+        background: url("../images/arrow-768-2.svg") center 67% no-repeat;
+    }
+
+    .admission__grid-item-3 {
+        background: url("../images/arrow-768-3.svg") 11% 10% no-repeat;
+    }
+
+    .admission__grid-item-4 {
+        background: url("../images/arrow-768-4.svg") center 39% no-repeat;
+    }
+
+    .admission__grid-item-5 {
+        background: url("../images/arrow-768-5.svg") center no-repeat;
+    }
+
+    .admission__grid-item-6 {
+        background: url("../images/arrow-768-6.svg") right 33% no-repeat;
+    }
+
+    .admission__grid-item-7 {
+        background: url("../images/arrow-768-7.svg") center 19% no-repeat;
+    }
+
+    .admission__grid-item-8 {
+        background: url("../images/arrow-768-8.svg") left 35% no-repeat;
+    }
+}
+
 @media (max-width: 1023px) {
-    .admission {
-        background: url("../images/arrow-768.png") center no-repeat;
-    }
-
-    .admission--grid {
-        display: none;
-    }
-
     .admission--grid {
         display: none;
     }
@@ -162,11 +197,14 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .admission {
         background: url(../images/arrow-375.png) 20% 35% no-repeat;
+        background-size: contain;
     }
+}
 
+@media (max-width: 375px) {
     .admission__p-wrapper {
         font-size: 16px;
         line-height: 19px;
@@ -177,11 +215,11 @@
     }
 
     .admission--h2 {
-            font-size: 24px;
-            line-height: 28px;
+        font-size: 24px;
+        line-height: 28px;
     }
 
     .admission--p-additional-option {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
