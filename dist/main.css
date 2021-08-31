@@ -409,7 +409,7 @@ body {
 
   .swiper-pagination.swiper-pagination-2 {
     display: block;
-    left: 40%;
+    left: 45%;
   }
 }
 @media (max-width: 768px) and (min-width: 376px) {
@@ -1039,7 +1039,7 @@ body {
   }
 
   .swiper-pagination-3 {
-    width: 100%;
+    width: 90%;
   }
 
   .swiper-button-next.swiper-button-next-3, .swiper-button-prev.swiper-button-prev-3 {
@@ -2451,7 +2451,7 @@ body {
 
   .swiper-pagination.swiper-pagination-2 {
     display: block;
-    left: 40%;
+    left: 45%;
   }
 }
 @media (max-width: 768px) and (min-width: 376px) {
@@ -2700,7 +2700,7 @@ body {
   }
 
   .swiper-pagination-3 {
-    width: 100%;
+    width: 90%;
   }
 
   .swiper-button-next.swiper-button-next-3, .swiper-button-prev.swiper-button-prev-3 {
