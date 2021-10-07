@@ -1,0 +1,68 @@
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= "Поступай правильно"
+    link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    link(rel='stylesheet', href='./main.css', type='text/css')
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+
+  body
+      
+      include header.pug
+      main 
+        section.section__university-name
+            div.container.university-container
+                h1.h1__university Федеральное государственное бюджетное образовательное учреждение высшего образования «Донской государственный технический университет»
+                img(src="./images/Logo.png", alt="").university__logo
+                div.university--licence
+                    p Лицензия от 27.06.2016 №2245. Бессрочно
+                    p Ректор Бесарион Чохоевич Месхи 
+                    a(href="") donstu.ru
+                div.university--other-services
+                    div.university-other-services__wrapper
+                        img(src="./images/госуслуги.png", alt="")
+                        span Подать заявление онлайн
+                    div.university-other-services__wrapper
+                        img(src="./images/like.png", alt="")
+                        span Добавить в избранное
+                    div.university-other-services__wrapper
+                        img(src="./images/arrows.png", alt="")
+                        span Сравнить с другими вузами
+
+        section.about.university-about__section
+         div.container.university-container__links
+          ul.about__list
+           li.about__list-item
+             a(href="./images/university.html").about__a.about__a--university
+               p.about__p СТРАНИЦА ПРИЕМНОЙ КОМПАНИИ
+
+           li.about__list-item
+             a(href="").about__a.about__a--university
+              p.about__p УЗНАТЬ О ПОРЯДКЕ ПРИЕМА
+            
+           li.about__list-item
+             a(href="").about__a.about__a--university
+              p.about__p АКТУАЛЬНОЕ КОЛИЧЕСТВО МЕСТ
+
+        section.university-about__section
+            div.container.university__container--grid
+                h2.general-info__h2 Общие сведения
+                div.general-info__container 
+                    p.general-info__heading.general-info__p--big Всего 28,97 тыс. учащихся 
+                    p.general-info__p--big Доступно 3 871 бюджетных 6 085 внебюджетных мест
+                    p.general-info__p--small Из них по квоте 335 
+
+                div.general-info__container 
+                    p.general-info__heading.general-info__p--big Всего 28,97 тыс. учащихся 
+                    p.general-info__p--big Доступно 3 871 бюджетных 6 085 внебюджетных мест
+                    p.general-info__p--small Из них по квоте 335 
+
+                div.general-info__container 
+                    p.general-info__heading.general-info__p--big Всего 28,97 тыс. учащихся 
+                    p.general-info__p--big Доступно 3 871 бюджетных 6 085 внебюджетных мест
+                    p.general-info__p--small Из них по квоте 335  
+
+
+
+script(src='./app.js')

@@ -1,0 +1,119 @@
+@import "general.scss";
+.section__university-name {
+    padding-top: 80px;
+}
+
+.university-about__section {
+    background-color: #f4f9fc;
+}
+
+.university-container {
+    display: grid;
+    grid-template-columns: 80px auto 300px;
+    grid-template-rows: repeat(2, auto);
+    padding-right: 25px;
+    padding-left: 25px;
+    gap: 40px 30px;
+}
+
+.university-container__links {
+    padding: 60px 25px;
+}
+
+.university__logo {
+    grid-area: 2/1/3/2;
+    width: 80px;
+    height: 85px;
+}
+
+.university--licence {
+    grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.university--other-services {
+    grid-area: 2/3/3/4;
+    img {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.university-other-services__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    img {
+        margin-right: 10px;
+    }
+}
+
+.h1__university {
+    font-size: 32px;
+    grid-area: 1/1/2/3;
+    color: #3B4157;
+}
+
+.about__a--university {
+    display: block;
+    padding: 30px 25px;
+}
+
+.general-info__container {
+    width: 350px;
+    height: 210px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 16px 16px #dde6eb;
+}
+
+.general-info__heading {
+    border-bottom: 1px solid #0d5adc;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/inf.svg");
+        width: 25px;
+        height: 25px;
+        right: 0;
+    }
+}
+
+.university-container {
+    padding: 60px 25px;
+}
+
+.university__container--grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 0 25px;
+}
+
+.general-info__h2 {
+    grid-area: 1/1/2/-1;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.general-info__p--big {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    &:first-child {
+        padding-bottom: 20px;
+    }
+}
+
+.general-info__p--small {
+    font-size: 14px;
+}
